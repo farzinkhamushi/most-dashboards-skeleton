@@ -1,0 +1,17 @@
+:root{
+    --content-bg-color:#d8a006;
+    --sidebar-bg-color:#d80606;
+    --nav-bg-color:#0ff7e3;
+    --nav-left-bg-color:#1d00c4;
+    --nav-right-bg-color:#320ff7;
+    --below-box-bg-color:#2de200;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}

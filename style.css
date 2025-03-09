@@ -1,0 +1,102 @@
+.content{
+    position: relative;
+    left: 180px;
+    top: 0;
+    width: calc(100% - 180px);
+    height: 100vh;
+    background-color: var(--content-bg-color);
+    transition: 0.3s ease;
+}
+
+.sidebar{
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 180px;
+    background-color: var(--sidebar-bg-color);
+    transition: 0.3s ease;
+}
+
+.sidebar.close{
+    width: 60px;
+}
+
+.sidebar.close~.content{
+    left: 60px;
+    width: calc(100% - 60px);
+}
+
+
+
+
+
+
+
+.main{
+    width: 100%;
+    height: calc(100% - 60px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.nav{
+    width: 100%;
+    height: 60px;
+    background-color: var(--nav-bg-color);
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+
+.leftside{
+    display: flex;
+    background-color: var(--nav-left-bg-color);
+    gap: 10px;
+}
+.rightside{
+    display: flex;
+    background-color: var(--nav-right-bg-color);
+}
+
+
+
+
+.theme_toggler_container{
+    width: 40px;
+    height: 20px;
+    border-radius: 20px;
+    position: relative;
+    background-color: #d41bb5;
+    cursor: pointer;
+}
+
+.theme_toggler_container .theme_toggler{
+    width: 20px;
+    height: 20px;
+    background-color: #01c4ff;
+    border-radius: 50%;
+    position: absolute;
+    left: 0px;
+    transition: 0.5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.theme_toggler_container .theme_toggler i{
+    /*
+    transition animation 
+    doesn't word beacause 
+    the bx-moon and bx-sun classes 
+    which are set by the code 
+    is read at the moment
+    */
+
+    /*
+    transition: 0.5s ease;
+    */
+}

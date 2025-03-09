@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="root_style.css">
+    <link rel="stylesheet" href="style.css">
+    <title>most admin dashboards skeleton</title>
+</head>
+<body>
+    <div class="sidebar">
+        <a href="#" class="sidebar_toggler"><i class="bx bx-x"></i></a>
+        <ul>
+            <li>
+                <a href="#">item</a>
+            </li>
+            <li>
+                <a href="#">item</a>
+            </li>
+            <li>
+                <a href="#">item</a>
+            </li>
+            <li>
+                <a href="#">item</a>
+            </li>
+            <li>
+                <a href="#">item</a>
+            </li>
+        </ul>
+    </div>
+    <div class="content">
+        <div class="nav">
+            
+            <div class="rightside">
+                <input type="text" name="search" id="" placeholder="search...">
+                <i class="bx bx-search"></i>
+            </div>
+
+            <div class="leftside">
+                <button class="language">en</button>
+                <div class="theme_toggler_container">
+                    <div class="theme_toggler"><i class="bx bx-sun"></i></div>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div>
+                <h1>Skeleton of the most apps</h1>
+                <p>something here as a main content or the commercial goals of the app</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script>
+        
+        const sidebar_toggler = document.querySelector(".sidebar_toggler");
+        const sidebar = document.querySelector('.sidebar');
+        
+        const theme_toggler_container = document.querySelector('.theme_toggler_container');
+        const theme_toggler = document.querySelector('.theme_toggler');
+        const theme_toggler_i = document.querySelector('.theme_toggler i');
+
+
+        let i = 0;
+        //theme toggler
+        theme_toggler_container.addEventListener('click', () => {
+            theme_toggler_i.classList.toggle('bx-moon');
+            theme_toggler_i.classList.toggle('bx-sun');
+
+            if (i == 0) {
+                theme_toggler.style.left = "20px";
+                i=1;
+            }else{
+                theme_toggler.style.left = "0px";
+                i=0;
+            }
+        });
+
+
+        //sidebar close and open
+        sidebar_toggler.addEventListener("click",()=>{
+            sidebar.classList.toggle('close');
+        });
+
+        let themeChanger = () => {
+            //
+        }
+    </script>
+</body>
+</html>
